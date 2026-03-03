@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Tiket Travel</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Form Pemesanan Tiket Travel</h1>
+        <form action="" method="post" class="form-aja">
+            <label for="fullname">Nama Lengkap :</label>
+            <input type="text" name="fullname" id="fullname"
+            placeholder="Masukkan nama lengkap" required>
+            <br><br>
+
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email"
+            placeholder="Masukkan Email" required>
+            <br><br>
+
+            <label for="telpon">Nomor Telpon :</label>
+            <input type="tel" name="telpon" id="telpon"
+            placeholder="Masukkan Nomor Telpon" required>
+            <br><br>
+
+            <label for="rute">Rute Perjalanan :</label>
+            <select name="rute" id="rute" required>
+                <option value="">Pilih Rute</option>
+                <option value="jakarta-bandung">Jakarta - Bandung</option>
+                <option value="jakarta-surabaya">Jakarta - Surabaya</option>
+                <option value="jakarta-malang">Jakarta - Malang</option>
+            </select>
+            <br><br>
+
+            <label for="date">Tanggal Keberangkatan :</label>
+            <input type="date" name="date" id="date" required>
+
+            <label for="waktu">Waktu Keberangkatan :</label>
+            <select name="waktu" id="waktu" required>
+                <option value="">Pilih Waktu</option>
+                <option value="pagi">Pagi (06.00 - 12.00)</option>
+                <option value="siang">Siang (12.00 - 18.00)</option>
+                <option value="malam">Malam (18.00 - 24.00)</option>
+            </select>
+            <br><br>
+
+            <label for="penumpang">Jumlah Penumpang :</label>
+            <input type="number" name="penumpang" id="penumpang" min="1" max="6" required>
+            <br><br>
+
+            <label for="pembayaran">Metode Pembayaran :</label>
+            <select name="pembayaran" id="pembayaran" required>
+                <option value="">Pilih Metode Pembayaran</option>
+                <option value="cash">Cash</option>
+                <option value="transfer">Transfer Bank</option>
+                <option value="e-wallet">E-Wallet</option>
+            </select>
+            <br><br>
+
+            <button type="submit">Pesan Tiket</button>
+            <button type="reset">Batal</button>
+        </form>
+    </div>
+</body>
+</html>

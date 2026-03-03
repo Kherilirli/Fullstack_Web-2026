@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.header {
+    color: crimson;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 10px;
+}
+
+.form-aja {
+    padding: 20px;
+    border: 2px solid crimson;
+    margin-top: 70px;
+    background-color: grey;
+    border-radius: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+    color: grey;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: crimson;
+    color: white;
+}
