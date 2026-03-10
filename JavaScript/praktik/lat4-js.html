@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel</title>
+</head>
+<body>
+
+    <script>
+        var kalimat = "Belajar JavaScript";
+        alert(kalimat);
+        document.write(kalimat);
+        console.log(kalimat);
+        document.write("<br>"); //untuk membuat baris baru
+
+        let kalimatku = "Belajar JavaScript itu sangat mudah";
+        alert(kalimatku);
+        document.write(kalimatku);
+        console.log(kalimatku);
+
+        document.write("<hr>");
+
+        let nama = "Kheril Irli";
+        let pekerjaan = "Mahasiswa";
+        let usia = 20;
+        let bb = 60.5;
+        let kursus = "NFA";
+        let alamat = "Jl. Lenteng Agung Raya";
+        document.write("Saya sedang mengikuti kursus " + kursus + " yang beralamat di " + alamat);
+        document.write("<br>");
+        document.write("<br>");
+        //cetak 1
+        document.write("Nama saya: " + nama + "<br>Seorang: " + pekerjaan + "<br>Usia: "
+        + usia + "<br>Berat Badan: " + bb + " kg");
+
+        document.write("<hr>");
+        var produk = "Laptop";
+        let stok = 10; //var & let nilai bisa diubah
+        const harga = 15000000; //const nilai tidak bisa diubah
+
+        //cetak 2
+        document.write("Nama Produk: " + produk);
+        document.write("<br>Stok Produk: " + stok);
+        document.write("<br>Harga Produk: " + harga);
+
+        document.write("<hr>");
+        //let bisa diubah nilainya
+        let namaku = "Kheril Irli";
+        const umurku = 21;
+        namaku = "Kheril Irli Januar"
+        document.write("Nama saya: " + namaku + " berumur " + umurku + "tahun");
+
+        document.write("<hr>");
+        //deklarasi & inisialisasi variabel konstanta
+        let jari2 = 15;
+        const phi = 3.14;
+        let keliling = 2 * phi * jari2;
+        let luas = phi * jari2 * jari2;
+        //cetak data
+        document.write(
+            "Diketahui jari2 sebuah lingkaran: " + jari2 + " cm" +
+            "<br>Keliling Lingkaran: " + keliling + " cm" +
+            "<br>Luas Lingkaran: " + luas + " cm"
+        );
+    </script>
+</body>
+</html>
