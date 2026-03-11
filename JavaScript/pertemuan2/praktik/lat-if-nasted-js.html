@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF NASTED</title>
+</head>
+<body>
+    <script>
+        let username = prompt("Username: ");
+        let password = prompt("Password: ");
+
+        // Jika username dan password cocok, maka "Selamat Datang"
+        // Jika password tidak cocok, maka "Coba Lagi"
+        // Jika username dan password tidak cocok, maka "Tidak Terdaftar"
+
+        if (username == "dono") {
+            if (password == "dono123") {
+                document.write("Selamat Datang " + username);
+            } else {
+                document.write("Password Salah Coba Lagi")
+            }
+        } else {
+            document.write("Anda Belum Terdaftar");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPING FOR</title>
+</head>
+<body>
+    <script>
+        //hitung maju
+        let x;
+        for(x=1; x<=10; x++){
+            document.write(x + "<br>")
+        }
+
+        //hitung mundur
+        let y;
+        for(y=10; y>=1; y--){
+            document.write(y + "<br>")
+        }
+
+        //while looping
+        let b = 0;
+        while(b < 10){
+            document.write(b + "<br>");
+            b++;
+        }
+    </script>
+
+    <hr><br>
+    <script>
+        let no;
+        for(no = 1; no<=10; no++){
+            if(no == 20) continue; //lanjut looping tetapi skip angka
+            if(no == 30) break; //benar2 keluar dari looping
+            document.write("<br>No." + no);
+        }
+    </script>
+
+    <hr><br>
+    <script>
+        //hitung mundur
+        let angka;
+        for(angka = 10; angka>=1; angka--){
+            if(angka == 20) continue; //lanjut looping tetapi skip angka
+            if(angka == 30) break; //benar2 keluar dari looping
+            document.write("<br>No." + angka);
+        }
+    </script>
+</body>
+</html>
