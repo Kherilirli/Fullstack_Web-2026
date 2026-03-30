@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Toko Online</title>
+</head>
+<body>
+    <h2 style="border-bottom: solid 8px black; text-align: center; background-color: grey;">
+        Manajemen Produk Toko Online
+    </h2>
+
+    <button id="tampil">Tampilkan Produk</button>
+    <button id="tambah">Tambah Produk</button>
+    <button id="hapus">Hapus Produk</button>
+
+    <pre id="output" style="font-size: 16px;"></pre>
+
+    <script>
+        let produkList = [
+            { id: 1, nama: "Laptop", harga: 12000000},
+            { id: 2, nama: "Smartphone", harga: 5000000 },
+            { id: 3, nama: "Tablet", harga: 7000000 },
+            { id: 4, nama: "Mouse", harga: 200000 },
+            { id: 5, nama: "Keyboard", harga: 300000 }
+        ];
+
+        // Tampilkan produk menggunakan dustructuring
+        function tampilkanProduk(){
+            let hasil = "";
+
+            for(const {id, nama, harga} of produkList){
+                hasil += `ID: ${id}, Nama: ${nama}, Harga: Rp${harga.toLocaleString("id-ID")}\n`;
+            }
+            document.getElementById("output").textContent = hasil;
+        }
+
+        // Tambah Produk menggunakan spread operator
+        function tambahProduk(id, nama, harga){
+            const produkBaru = {id, nama, harga};
+            produkList = [...produkList, produkBaru];
+            alert("Produk berhasil ditambahkan");
+        }
+
+        // Hapus produk menggunakan rest
+        function hapusProduk(id, ...dataProduk){
+            produkList = dataProduk.filter(({id: produkId}) => produkId !== id);
+            alert(`Produk dengan ID ${id} berhasil dihapus`);
+        }
+
+        const eventHandler = {
+            tampil: function(){
+                tampilkanProduk();
+            },
+            tambah: function(){
+                const id = prompt("Masukkan ID produk:");
+                const nama = prompt("Masukkan nama produk:");
+                const harga = parseInt(prompt("Masukkan harga produk:"));
+                tambahProduk(id, nama, harga);
+                tampilkanProduk();
+            },
+            hapus: function(){
+                hapusProduk(2, ...produkList);
+                tampilkanProduk();
+            }
+        }
+
+        // Event Listener
+        document.getElementById("tampil").addEventListener("click", eventHandler.tampil);
+        document.getElementById("tambah").addEventListener("click", eventHandler.tambah);
+        document.getElementById("hapus").addEventListener("click", eventHandler.hapus);
+    </script>
+</body>
+</html>

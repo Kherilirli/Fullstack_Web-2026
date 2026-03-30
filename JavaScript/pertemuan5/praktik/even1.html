@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <!-- event handling inline -->
+    <button onclick="alert('tombol diklik')">Klik Saya</button>
+
+    <br><br>
+
+    <!-- event menggunkan property dan DOM -->
+    <button id="myButton">Klik DOM</button>
+
+    <br><br>
+    <button id="changeColor">Ubah Warna Latar</button>
+    <script>
+        let button = document.getElementById("myButton");
+        // menggunakan onclick
+        // button.onclick = function() {
+        //     alert("Tombol diklik");
+        // }
+
+        // menggunakan addEventListener
+        button.addEventListener("click", function(){
+            alert("Tombol diklik dengan addEventListener");
+        });
+
+        button.addEventListener("click", function(){
+            console.log("Event Click dijalankan");
+        })
+
+        let buttonWarna = document.getElementById("changeColor");
+        buttonWarna.addEventListener("click", function(){
+            document.body.style.backgroundColor = "blue";
+        })
+    </script>
+</body>
+</html>
