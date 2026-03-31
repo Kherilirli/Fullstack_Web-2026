@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="judul">Contoh jQuery</h2>
+    <p class="text">Ini Paragraph pertama</p>
+    <p class="text">Ini Paragraph kedua</p>
+    <button id="ubah">Ubah</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#ubah").click(function(){
+                $('#judul').html("<b> Judul Baru </b>");
+                $(".text").css("font-weight", "bold")
+            });
+        });
+    </script>
+</body>
+</html>
