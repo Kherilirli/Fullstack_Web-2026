@@ -1,0 +1,42 @@
+.navLink {
+  position: relative;
+  color: #1599ff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.navLink:hover {
+  color: #0dcaf0 !important;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #22d7fb;
+  transition: 0.3s;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.logoHover {
+  transition: 0.3s;
+}
+
+.logoHover:hover {
+  transform: scale(1.05);
+}
+
+.iconHover {
+  transition: 0.3s;
+}
+
+.logoHover:hover .iconHover {
+  color: #0dcaf0;
+  transform: rotate(-10deg);
+}
