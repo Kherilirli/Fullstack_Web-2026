@@ -17,7 +17,7 @@ export default function ProdukList() {
 
         setBooks((prevBooks) => [...prevBooks, newBook]);
 
-        alert("Berhasil menambahkan buku baru!");
+        alert("Berhasil menambahkan buku baru! Scroll ke bawah");
     }
 
     return (

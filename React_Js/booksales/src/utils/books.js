@@ -33,7 +33,7 @@ const books = [
   },
   {
     id: 5,
-    title: "Database MySQL untuk Pemula",
+    title: "Database MySQL Untuk Pemula",
     author: "Eko Saputra",
     year: 2021,
     description: "Belajar dasar-dasar database menggunakan MySQL.",
@@ -65,7 +65,7 @@ const books = [
   },
   {
     id: 9,
-    title: "Git & GitHub untuk Kolaborasi",
+    title: "Git & GitHub Untuk Kolaborasi",
     author: "Irwan Kurniawan",
     year: 2021,
     description: "Belajar version control dan kolaborasi tim menggunakan Git.",
